@@ -63,7 +63,7 @@
           "description": "",
           "id": 1,
           "links": [],
-          "title": "123454321",
+          "title": "conflict001",
           "vizConfig": {
             "group": "gauge",
             "kind": "VizConfig",
@@ -143,7 +143,20 @@
         ]
       }
     },
-    "links": [],
+    "links": [
+      {
+        "asDropdown": false,
+        "icon": "external link",
+        "includeVars": false,
+        "keepTime": false,
+        "tags": [],
+        "targetBlank": true,
+        "title": "Source (GitHub)",
+        "tooltip": "View source file in repository",
+        "type": "link",
+        "url": "https://github.com/Jeralan/gitsynctest/blob/main/grafana/qwerqwerqwer/a-file-of-my-choosing.json"
+      }
+    ],
     "liveNow": false,
     "preferences": {
       "layout": {
