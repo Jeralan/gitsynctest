@@ -66,6 +66,105 @@
             "version": "13.0.0-local"
           }
         }
+      },
+      "panel-2": {
+        "kind": "Panel",
+        "spec": {
+          "data": {
+            "kind": "QueryGroup",
+            "spec": {
+              "queries": [
+                {
+                  "kind": "PanelQuery",
+                  "spec": {
+                    "hidden": false,
+                    "query": {
+                      "datasource": {
+                        "name": "azure-monitor-oob"
+                      },
+                      "group": "grafana-azure-monitor-datasource",
+                      "kind": "DataQuery",
+                      "spec": {
+                        "azureMonitor": {
+                          "allowedTimeGrainsMs": [],
+                          "timeGrain": "auto"
+                        },
+                        "queryType": "Azure Monitor"
+                      },
+                      "version": "v0"
+                    },
+                    "refId": "A"
+                  }
+                }
+              ],
+              "queryOptions": {},
+              "transformations": []
+            }
+          },
+          "description": "",
+          "id": 2,
+          "links": [],
+          "title": "time",
+          "vizConfig": {
+            "group": "grafana-clock-panel",
+            "kind": "VizConfig",
+            "spec": {
+              "fieldConfig": {
+                "defaults": {},
+                "overrides": []
+              },
+              "options": {
+                "bgColor": "",
+                "clockType": "24 hour",
+                "countdownSettings": {
+                  "endCountdownTime": "2026-05-06T20:52:25-07:00",
+                  "endText": "00:00:00",
+                  "invalidValueText": "invalid value",
+                  "noValueText": "no value found",
+                  "queryCalculation": "last",
+                  "source": "input"
+                },
+                "countupSettings": {
+                  "beginCountupTime": "2026-05-06T20:52:25-07:00",
+                  "beginText": "00:00:00",
+                  "invalidValueText": "invalid value",
+                  "noValueText": "no value found",
+                  "queryCalculation": "last",
+                  "source": "input"
+                },
+                "dateSettings": {
+                  "dateFormat": "YYYY-MM-DD",
+                  "fontSize": "20px",
+                  "fontWeight": "normal",
+                  "locale": "",
+                  "showDate": false
+                },
+                "descriptionSettings": {
+                  "descriptionText": "",
+                  "fontSize": "12px",
+                  "fontWeight": "normal",
+                  "noValueText": "no description found",
+                  "source": "none"
+                },
+                "fontMono": false,
+                "mode": "time",
+                "refresh": "sec",
+                "timeSettings": {
+                  "fontSize": "12px",
+                  "fontWeight": "normal"
+                },
+                "timezone": "",
+                "timezoneSettings": {
+                  "fontSize": "12px",
+                  "fontWeight": "normal",
+                  "showTimezone": false,
+                  "zoneFormat": "offsetAbbv"
+                }
+              }
+            },
+            "version": "3.1.0"
+          }
+        }
       }
     },
     "layout": {
@@ -84,11 +183,37 @@
               "x": 0,
               "y": 0
             }
+          },
+          {
+            "kind": "GridLayoutItem",
+            "spec": {
+              "element": {
+                "kind": "ElementReference",
+                "name": "panel-2"
+              },
+              "height": 8,
+              "width": 12,
+              "x": 12,
+              "y": 0
+            }
           }
         ]
       }
     },
-    "links": [],
+    "links": [
+      {
+        "asDropdown": false,
+        "icon": "external link",
+        "includeVars": false,
+        "keepTime": false,
+        "tags": [],
+        "targetBlank": true,
+        "title": "Source (GitHub)",
+        "tooltip": "View source file in repository",
+        "type": "link",
+        "url": "https://github.com/Jeralan/gitsynctest/blob/main/grafana/new-dashboard-2026-05-06-gnweh.json"
+      }
+    ],
     "liveNow": false,
     "preferences": {
       "layout": {
