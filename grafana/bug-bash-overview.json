@@ -59,7 +59,7 @@
                   "showLineNumbers": false,
                   "showMiniMap": false
                 },
-                "content": "# Azure Managed Grafana – Git Sync Bug Bash\n\nWelcome to the bug bash for Grafana 13 Git Sync! This dashboard is managed via Git Sync and lives in a GitHub repository.\n\n## What to Test\n\n- **Bi-directional sync**: Ediin GitHub.\n- **Pull request previews**: Mthe dashboard is updated automatically.\n- **Edit from GitHub**: Modify a dashbears in Grafana.\n- **Folder sync**: Create/renaitHub.\n- **Conflict resolution**: Make simultandled.\n\n## Repo Structure\n\n```\ngrafana/\n  bug-bash-overview.json          ← this dashboard (root level)\n  AzureManagedGrafana/\n    team-dashboard.json           ← team-specific dashboard\n    metrics-overview.json         ← metrics overview\n```\n\n## Useful Links\n\n- [Git Sync Documentation](https://grafana.com/docs/grafana/latest/observability-as-code/provision-resources/git-sync-setup/)\n- [GitHub Repository](https://github.com/Jeralan/gitsynctest)\n",
+                "content": "# Azure Managed Grafana – Git Sync Bug Bash\n\nWelcome to the bug bash for Grafana 13 Git Sync! This dashboard is managed via Git Sync and lives in a GitHub repository.\n\n## What to Test\n\n- **Bi-directional sync**: Edit a dashboard in Grafana and verify the changes appear as a pull request in GitHub.\n- **Pull request previews**: Merge a PR and verify the dashboard is updated automatically.\n- **Edit from GitHub**: Modify a dashboard JSON file directly in GitHub and verify the change appears in Grafana.\n- **Folder sync**: Create/rename/delete folders and verify structure is reflected in GitHub.\n- **Conflict resolution**: Make simultaneous edits in Grafana and GitHub and observe how conflicts are handled.\n\n## Repo Structure\n\n```\ngrafana/\n  bug-bash-overview.json          ← this dashboard (root level)\n  AzureManagedGrafana/\n    team-dashboard.json           ← team-specific dashboard\n    metrics-overview.json         ← metrics overview\n```\n\n## Useful Links\n\n- [Git Sync Documentation](https://grafana.com/docs/grafana/latest/observability-as-code/provision-resources/git-sync-setup/)\n- [GitHub Repository](https://github.com/Jeralan/gitsynctest)\n",
                 "mode": "markdown"
               }
             },
@@ -96,7 +96,7 @@
                   "showLineNumbers": false,
                   "showMiniMap": false
                 },
-                "content": "**Edit this dashboard from the Grafana UI or directly in GitHub to test Git Sync!**\n\nSave changes in Grafana → push to a branch → open a PR → merge → see the update reflected.",
+                "content": "**Edit this dashboard from the Grafana UI or directly in GitHub to test Git Sync!**\n\nSave changs in Grafana → push to a branch → open a PR → merge → see the update reflected.",
                 "mode": "markdown"
               }
             },
